@@ -1,0 +1,163 @@
+:root {
+    --page-color: #FF383D;
+    --writer-color: #035755;
+    --paragraf-color: #4B4F51;
+}
+
+
+body {
+    background-color: #FFF;
+    font-family: "Roboto", sans-serif;
+}
+
+.red__button {
+
+    background: #FB4C47;
+    box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+    border-radius: 65px;
+    display: inline-block;
+    font-family: Gelion;
+    font-style: normal;
+    font-weight: normal;
+    padding: 14px 36px;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 29px;
+    color: #FFFFFF;
+
+    &:hover {
+        color: #FB4C47;
+        border: 2px solid var(--page-color);
+
+        background-color: #FFF;
+    }
+}
+
+
+.active {
+    margin-right: 25px;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--page-color) !important;
+    position: relative;
+    pointer-events: none;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    background: var(--page-color);
+    border: 1px solid #000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 6px;
+    height: 6px;
+    bottom: -9px;
+    left: auto;
+    right: 50%;
+    border-radius: 50%;
+}
+
+
+.header {
+    margin-top: 30px;
+}
+
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__navitems a {
+
+        color: var(--writer-color);
+        text-decoration: none;
+        font-family: Gelion;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        margin-right: 25px;
+
+        &.nav__navbar--button {
+            color: var(--page-color);
+            padding: 16px 45px;
+            border: 2px solid #FB4C47;
+            box-sizing: border-box;
+            border-radius: 46px;
+
+            &:hover {
+                background-color: var(--page-color);
+                color: #FFF;
+
+            }
+        }
+    }
+
+
+}
+
+.section1 {
+  
+    &__text {
+        width: 633px;
+
+        margin-top: 224px;
+        font-style: normal;
+    }
+
+    &__text h1.title {
+
+        font-family: Red Hat Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 52px;
+        line-height: 139%;
+        /* or 72px */
+
+        text-transform: capitalize;
+
+        color: #035755;
+
+        opacity: 0.5;
+        margin-bottom: 15px;
+        margin-top: 5px;
+
+        &::before {
+            content: "COVID-19 ALERT";
+            font-family: Red Hat Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 122%;
+            opacity: 0.5;
+            color: var(--page-color);
+
+
+
+        }
+
+    }
+
+    &__text.paragraph {
+
+        font-family: Gelion;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 190%;
+        color: #FFF;
+        text-transform: capitalize;
+        color: var(--paragraf-color);
+    }
+
+    &__image {
+        margin-top: 59px;
+        width: 130%;
+    }
+}
+
+.section2{
+
+    
+}
